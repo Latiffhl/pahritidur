@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pahri | Roblox Expert & Sleep Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center glass-card px-6 py-3 rounded-2xl shadow-sm">
+            <div class="text-xl font-extrabold tracking-tighter text-indigo-600">PAHRI.</div>
+            <div class="flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#hobbies" class="hover:text-indigo-600 transition">Hobbies</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6 hero-gradient">
+        <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6 text-center md:text-left">
+                <span class="px-4 py-2 bg-indigo-100 text-indigo-700 text-xs font-bold rounded-full uppercase tracking-widest">Available to Play</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight">
+                    Halo, Saya <span class="text-indigo-600 underline decoration-indigo-200">Pahri</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-md mx-auto md:mx-0">
+                    Seorang ahli dalam dunia virtual Roblox dan penganut gaya hidup istirahat berkualitas melalui hobi tidur.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#skills" class="px-8 py-3 bg-indigo-600 text-white rounded-xl font-semibold shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition transform hover:-translate-y-1">Lihat Keahlian</a>
+                    <button onclick="copyDiscord()" class="px-8 py-3 bg-white text-slate-700 border border-slate-200 rounded-xl font-semibold hover:bg-slate-50 transition">Discord: pahri#0000</button>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-indigo-200 rounded-3xl rotate-6 absolute top-0 left-0 -z-10 opacity-50"></div>
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-white rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border-4 border-white">
+                    <!-- Placeholder Emoji / Icon for Profile -->
+                    <span class="text-9xl floating">😴</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Roblox) -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">Keahlian Utama</h2>
+                <div class="h-1 w-20 bg-indigo-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition">🎮</div>
+                    <h3 class="text-xl font-bold mb-2">Pro Gaming</h3>
+                    <p class="text-slate-500 text-sm">Menguasai berbagai genre di Roblox mulai dari Obby, Simulator, hingga RPG kelas berat.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition">💎</div>
+                    <h3 class="text-xl font-bold mb-2">Trading Expert</h3>
+                    <p class="text-slate-500 text-sm">Ahli dalam manajemen item limited dan melakukan trading yang menguntungkan di marketplace.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition">🛠️</div>
+                    <h3 class="text-xl font-bold mb-2">Build Mastery</h3>
+                    <p class="text-slate-500 text-sm">Mampu membangun dunia kreatif dengan detail yang memanjakan mata di Roblox Studio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section (Tidur) -->
+    <section id="hobbies" class="py-24 px-6 bg-slate-100">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1 order-2 md:order-1">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                        <div class="text-3xl mb-2">🌙</div>
+                        <div class="font-bold text-slate-800">12 Jam</div>
+                        <div class="text-xs text-slate-500 uppercase">Rekor Tidur</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm text-center mt-8">
+                        <div class="text-3xl mb-2">☁️</div>
+                        <div class="font-bold text-slate-800">Nyenyak</div>
+                        <div class="text-xs text-slate-500 uppercase">Kualitas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 order-1 md:order-2 space-y-6">
+                <h2 class="text-4xl font-extrabold text-slate-900">Filosofi Hobi: Tidur</h2>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Bagi saya, tidur bukan sekadar istirahat, melainkan seni untuk memulihkan energi sebelum kembali bertualang di jagat Roblox. Tidur yang berkualitas adalah kunci kemenangan di setiap game.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-slate-700">
+                        <span class="w-6 h-6 bg-indigo-200 rounded-full flex items-center justify-center text-[10px]">✔</span>
+                        Master dalam teknik tidur siang 30 menit.
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-700">
+                        <span class="w-6 h-6 bg-indigo-200 rounded-full flex items-center justify-center text-[10px]">✔</span>
+                        Kolektor bantal ternyaman se-Indonesia.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 text-center border-t border-slate-200">
+        <p class="text-slate-400 text-sm">
+            © 2024 Pahri Portfolio. Dibuat dengan penuh mimpi (sambil tidur).
+        </p>
+    </footer>
+
+    <!-- Custom Modal/Toast for Clipboard -->
+    <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 px-6 py-3 bg-slate-900 text-white text-sm rounded-full shadow-2xl opacity-0 transition-opacity pointer-events-none">
+        ID Discord berhasil disalin!
+    </div>
+
+    <script>
+        function copyDiscord() {
+            const el = document.createElement('textarea');
+            el.value = 'pahri#0000';
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            const toast = document.getElementById('toast');
+            toast.style.opacity = '1';
+            setTimeout(() => {
+                toast.style.opacity = '0';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
